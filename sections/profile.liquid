@@ -1,34 +1,35 @@
-
-
 {% schema %}
-{
-  "name":"Product Category",
-  "settings":[
-
-  ],
-  "presets": [
-    {
-      "category": "Product Category",
-      "name": "Text"
-    }
-  ],
-  "blocks":[
   {
-  "name":"Product Category",
-    "settings":[
-    {
-      "id":"header",
-      "type":"text",
-      "label":"category text"
-    },
-
-    {
-      "id":"image",
-      "type":"image_picker",
-      "label":"product image"
-    }
+    "name": "Product Category",
+    "presets":[
+      {
+        "category":"Image",
+        "name":"Product Category"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"quote",
+        "name":"product collection",
+        "settings": [
+        {
+          "id": "header",
+          "type":"text",
+          "label": "Category Name"
+        },
+        {
+          "type":"image_picker",
+          "id":"user_img",
+          "label":"Categor Image"
+        },
+        {
+          "type":"url",
+          "id":"collection",
+          "label":"Collection Link"
+        }
+      ]
+      }
     ]
+
   }
-  ]
-}
 {% endschema %}
