@@ -53,8 +53,20 @@
 
     {% endif %}
   {% endif %}
+  
 
+  <div class="page-width topnav">
+    <div class="social-link">
+      <p>{% include "icon-whatsapp" %} (+27) 76 436 4002</p>
+    </div>
+    <div class="social-link">
+      <a href="">{% include "icon-insta" %}</a>
+      <a href="">{% include "icon-linked" %}</a>
+      <a href="">{% include "icon-fb" %}</a>
+    </div>
+  </div>
   <header class=" navbar site-header{% if section.settings.align_logo == 'left' %} border-bottom logo--left{% else %} logo--center{% endif %}" role="banner">
+
     <div class=" page-width navbar grid grid--no-gutters grid--table site-header__mobile-nav ">
       {% if section.settings.align_logo == 'center' %}
         {%- assign logo_classes = 'medium-up--one-third medium-up--push-one-third logo-align--center' -%}
