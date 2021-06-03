@@ -1096,14 +1096,20 @@ textarea {
   display: inherit; }
 
 /*================ #Basic Styles ================*/
+.page-width2{
+  max-width: 1310px;
+  margin: 0 auto!important;
+}
 .page-width {
   *zoom: 1;
   max-width: 1310px;
-  margin: 0 auto; }
-  .page-width::after {
+  margin: 0 auto;
+ };
+  /* .page-width::after {
     content: '';
     display: table;
-    clear: both; }
+    clear: both; 
+  } */
 
 .main-content {
   display: block;
