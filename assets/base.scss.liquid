@@ -3,12 +3,25 @@
 
 *::after,
 *::before,*{
-    margin:0!important;
+    margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
 
+
 html{
     font-size: 62.5%!important;
+
+}
+
+@media only screen and (max-width: 43.75em) {
+    html{
+        font-size: 50%!important;
+    }
+}
+@media only screen and (max-width: 37.5em) {
+    html{
+        font-size: 45%!important;
+    }
 }
